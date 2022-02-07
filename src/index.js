@@ -11,11 +11,11 @@ import { InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/react-hooks";
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:4000/graphql",
+  uri: "https://mysterious-headland-49919.herokuapp.com/graphql",
 });
 
 const wsLink = new WebSocketLink({
-  uri: "ws://localhost:4000/graphql",
+  uri: "ws://mysterious-headland-49919.herokuapp.com/graphql",
   options: {
     reconnect: true,
   },
